@@ -1,107 +1,122 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable=no>
-	<meta name="description" content=" site about Julio Rodriguez, front end developer">
-	<meta name="keywords" content="Julio Rodriguez,web developer,profile,CV">
-	<title>Website developed with javascript and jquery</title>
-	<!--jquery.min.js-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!--jQuery UI-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css" />
-		<script src="js/moment.js"></script>
-	<!--       -->
-	<link rel="stylesheet" type="text/css" href="css/green.css" id="themes">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+			maximum-scale=1" user-scalable=no>
+    <meta name="description" content="site about Julio Rodriguez, front end
+			developer">
+    <meta name="keywords" content="Julio Rodriguez,web developer,profile,CV">
+    <title>MY CV in AngularJS</title>
 
-	<link rel="stylesheet" href="css/styles.css">
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
 
-	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css" />
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!--izimodal css -->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
 
-	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/green.css" id="themes">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--My styles-->
+    <link rel="stylesheet" href="css/styles.css">
 
-	    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
-		<script src="js/moment.js"></script>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-		<script src="js/function.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+
 </head>
-<body ng-app = "evalApp">
 
-	<div id="change-theme">
-		<div id="to-green" class="themeChanger">
-			<i class="fas fa-palette"></i>
-		</div>
-		<div id="to-blue" class="themeChanger">
-			<i class="fas fa-palette"></i>
-		</div>
-		<div id="to-red" class="themeChanger">
-			<i class="fas fa-palette"></i>
-		</div>
-	</div>
+<body ng-app="evalApp">
 
-	<section id="global">
+    <div id="change-theme">
+        <div id="to-green" class="themeChanger">
+            <i class="fas fa-palette"></i>
+        </div>
+        <div id="to-blue" class="themeChanger">
+            <i class="fas fa-palette"></i>
+        </div>
+        <div id="to-red" class="themeChanger">
+            <i class="fas fa-palette"></i>
+        </div>
+    </div>
 
-		<!--Header-->
-		<div id="megaheader">
-			<header>
-				<div id="logo">
-					ABOUT ME
-				</div>
-			</header>
-				<div id="rightHead">
-					<span class="postDate"></span>
-					<picture class="picUpRight">
-					  <source media="(min-width: 650px)" srcset="img/meSuit.jpg">
-					  <source media="(min-width: 465px)" srcset="img/meSuit.jpg">
-					  <img src="img/meSuit.jpg" alt="me">
-					  <figcaption class="figcaption1">Julio Rodriguez</figcaption>
-					  <figcaption class="figcaption2">Front End Web Developer</figcaption>
-					</picture>				
-				</div>
-		</div>
-				<nav id="menu">
-					<ul>
-						<li><a href="#/!">Inicio</a></li>
-						<li><a href="#!about">About Me</a></li>
-						<li id="contactOpener" data-izimodal-open="#modalSolOff"><a href="#" >Contacto</a></li>
-					</ul>
-				</nav>		
+    <section id="global">
 
-		<!--Slider-->
-		<div id="slider">
-			<div class="bxslider">
-			  <div><img src="img/rojo.jpg"></div>
-			  <div><img src="img/hojas.jpg"></div>
-			  <div><img src="img/cielo.jpg"></div>
-			</div>
-		</div>
+        <!--Header-->
+        <div id="megaheader">
+            <header>
+                <div id="logo">
+                    ABOUT ME
+                </div>
+            </header>
+            <div id="rightHead">
+                <span class="postDate"></span>
+                <picture class="picUpRight">
+                    <source media="(min-width: 650px)" srcset="img/meSuit.jpg">
+                    <source media="(min-width: 465px)" srcset="img/meSuit.jpg">
+                    <img src="img/meSuit.jpg" alt="me">
+                    <figcaption class="figcaption1">Julio Rodriguez</figcaption>
+                    <figcaption class="figcaption2">Front End Web Developer</figcaption>
+                </picture>
+            </div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#/!">Inicio</a></li>
+                <li><a href="#!about">About Me</a></li>
+                <li id="contactOpener" data-izimodal-open="#modalSolOff"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
 
-		<!--Content "ngRouted"-->
-		<div ng-view></div>
+        <!--Slider-->
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/rojo.jpg"></div>
+                <div><img src="img/hojas.jpg"></div>
+                <div><img src="img/cielo.jpg"></div>
+            </div>
+        </div>
 
-	</section>
-	<footer>
-		<span class="miCV">Mi CV!</span><a href="#" class="goUp">Ir arriba</a>
-	</footer>
+        <!--Content "ngRouted"-->
+        <div ng-view></div>
 
-	 <div id="modalSolOff" class="modais" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Contacto" data-izimodal-headerColor="#335DA4" style="width: 300px;">
-	 	<div class="contactame">
-			<ul>
-		      <li><span>Fono: </span><a href="tel:+56993370039" class="contact">+56950953048</a></li>
-		      <br>
-		  	<li><span>e-mail: </span><a href="mailto:julio.rodriguezr1@gmail.com" target="_top" class="contact">julio.rodriguezr1@gmail.com</a></li>
-	    	</ul> 
-	 	</div>
-	 </div>
+    </section>
+    <footer>
+        <span class="miCV">Mi CV!</span><a href="#" class="goUp">Ir arriba</a>
+    </footer>
+
+    <div id="modalSolOff" class="modais" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Contacto" data-izimodal-headerColor="#335DA4" style="width: 300px;">
+        <div class="contactame">
+            <ul>
+                <li><span>Fono: </span><a href="tel:+56993370039" class="contact">+56950953048</a></li>
+                <br>
+                <li><span>e-mail: </span><a href="mailto:julio.rodriguezr1@gmail.com" target="_top" class="contact">julio.rodriguezr1@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--jquery.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!--Moment.js-->
+    <script src="js/moment.js"></script>
+    <!--BXSlider-->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--izimodal.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+    <script src="js/moment.js"></script>
+    <!--Angular.min.js (1.7.5) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <!--Angular-route-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <!--My scripts-->
+    <script src="js/function.js"></script>
 </body>
+
 </html>
