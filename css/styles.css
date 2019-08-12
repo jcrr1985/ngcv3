@@ -240,7 +240,7 @@ picture img {
     background-color: #ccc;
 }
 
-input[type="submit"] {
+#login input[type="submit"] {
     margin-top: 15px;
     margin-bottom: 10px;
     padding: 7px;
@@ -248,6 +248,7 @@ input[type="submit"] {
     box-shadow: 0px 0px 5px gray;
     background: #ccc;
     color: #333333;
+    margin: 1rem auto 0 auto;
 }
 
 h4,
@@ -433,7 +434,18 @@ footer {
 }
 
 #accordion li {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 12px;
     list-style-type: circle !important;
+}
+
+span.more {
+    font-size: 12px;
+    color: #333;
+}
+
+.exp {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
 }
