@@ -1,1 +1,0 @@
-console.log('webpack compiling successfully: Module 1 loaded');

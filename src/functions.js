@@ -1,4 +1,4 @@
-var app = angular.module("evalApp", ["ngRoute"])
+var app = angular.module("evalApp", ["ngRoute"]);
 
 app.config(function($routeProvider) {
     $routeProvider
@@ -9,16 +9,18 @@ app.config(function($routeProvider) {
         .when("/about", {
             templateUrl: "sobremi.html",
             controller: "sobremiController"
-        })
+        });
 
 });
 
 app.controller('contentController', function($scope) {
     $scope.message = 'AngularJS: Exito cargando el html principal';
+
 });
 
 app.controller('sobremiController', function($scope) {
     $scope.message = 'AngularJS: Exito cargando el About';
+    alert($scope.message);
     $("#accordion").accordion();
 });
 
@@ -45,23 +47,23 @@ $(document).ready(function() {
     $("#change-theme div").click(function() {
 
         if (this.id == "to-green") {
-            $("#themes").attr("href", "css/green.css")
+            $("#themes").attr("href", "css/green.css");
         } else if (this.id == "to-blue") {
-            $("#themes").attr("href", "css/blue.css")
+            $("#themes").attr("href", "css/blue.css");
         } else if (this.id == "to-red") {
-            $("#themes").attr("href", "css/red.css")
+            $("#themes").attr("href", "css/red.css");
         }
 
-    })
+    });
 
     $(".goUp").click(function(e) {
         e.preventDefault();
 
         $("html,body").animate({
             scrollTop: 0
-        }, 500)
-    })
+        }, 500);
+    });
 
     $(".modais").iziModal({ history: false, fullscreen: true, loop: true, zindex: 99999, focusInput: true });
 
-})
+});
