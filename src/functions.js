@@ -40,21 +40,21 @@ $(document).ready(function() {
         autoControls: true,
         stopAutoOnClick: true,
         pager: true,
-        responsive: true,
+        // responsive: true,
     });
 
 
-    $("#change-theme div").click(function() {
+    // $("#change-theme div").click(function() {
 
-        if (this.id == "to-green") {
-            $("#themes").attr("href", "css/green.css");
-        } else if (this.id == "to-blue") {
-            $("#themes").attr("href", "css/blue.css");
-        } else if (this.id == "to-red") {
-            $("#themes").attr("href", "css/red.css");
-        }
+    //     if (this.id == "to-green") {
+    //         $("#themes").attr("href", "css/green.css");
+    //     } else if (this.id == "to-blue") {
+    //         $("#themes").attr("href", "css/blue.css");
+    //     } else if (this.id == "to-red") {
+    //         $("#themes").attr("href", "css/red.css");
+    //     }
 
-    });
+    // });
 
     $(".goUp").click(function(e) {
         e.preventDefault();
