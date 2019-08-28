@@ -20,7 +20,7 @@ app.controller('contentController', function($scope) {
 
 app.controller('sobremiController', function($scope) {
     $scope.message = 'AngularJS: Exito cargando el About';
-    alert($scope.message);
+
     $("#accordion").accordion();
 });
 
