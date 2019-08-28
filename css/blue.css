@@ -1,21 +1,15 @@
-
-#logo{
-
-	background: steelblue;
-
+#logo {
+    background: steelblue;
 }
 
-.buttonmore{
-
-	background: steelblue;
-
+.buttonmore {
+    background: steelblue;
 }
 
-
-#menu ul li:hover{
-	background: steelblue;
+#menu ul li:hover {
+    background: steelblue;
 }
 
-body{
-	background: url('../img/cielo.jpg');
+body {
+    background: url('https://picsum.photos/id/23/1500/1500');
 }
