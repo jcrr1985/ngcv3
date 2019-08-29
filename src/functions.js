@@ -24,13 +24,6 @@ app.controller('sobremiController', function($scope) {
     $("#accordion").accordion();
 });
 
-date = new Date();
-
-var d = moment(date).format("dddd,MMMM Do YYYY")
-var startdate = moment().subtract(1, "days").format("dddd,MMMM Do YYYY");
-
-$(".postDate").html(d);
-$(".postDate2").html(startdate);
 
 $('.bxslider').bxSlider({
     auto: true,
