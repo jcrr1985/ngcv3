@@ -12,22 +12,27 @@
             developer,profile,CV">
     <title>MY CV in AngularJS </title>
 
-    <!--jQuery UI-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <!--jquer UI-->
+    <link rel="stylesheet" href="./libraries/jqueryui.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css" />
+    <!--jquer Structure-->
+    <link rel="stylesheet" href="./libraries/jquery-ui-structure.css">
+    <!--jqui Theme css-->
+    <link rel="stylesheet" href="./libraries/jquery-ui-theme.css">
+    <!--izimodal css-->
+    <link rel="stylesheet" href="./libraries/izimodal.css">
 
-    <!--izimodal css -->
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
+    <!--Font Awesome all-->
+    <link rel="stylesheet" href="./libraries/faminall.css">
 
-    <link rel="stylesheet" type="text/css" href="css/green.css" id="themes">
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--BXSlider-->
+    <link rel="stylesheet" href="./libraries/bxslider.css">
+
+    <!--Green-->
+    <link rel="stylesheet" type="text/css" href="./css/green.css" id="themes">
+
     <!--My styles-->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body ng-app="evalApp">
@@ -77,7 +82,7 @@
             <div class="bxslider">
                 <div><img src="https://robkendal.co.uk/static/9ea4992a47b7ac036839c70677e2e6d7/4aca8/dlanor-s-703975-unsplash.jpg"></div>
                 <div><img src="https://miro.medium.com/max/3760/1*fuQ69nWlAF-uvQ86296O6g.jpeg"></div>
-                <div><img src="https://www.mytechlogy.com/upload/by_users/MariaMartinez/061903065620hgjh.png"></div>
+                <div><img src="https://13p13n407tzq3x5jwg1daxox-wpengine.netdna-ssl.com/wp-content/uploads/2015/04/what-is-a-responsive-website.png"></div>
             </div>
         </div>
 
@@ -99,40 +104,20 @@
         </div>
     </div>
 
-    <!-- Playing with easy modal .. delete -->
-    <div id="modal-home" class="modais" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Contacto" data-izimodal-headerColor="#335DA4" style="width: 300px;">
-        <div class="contactame">
-            <ul>
-                <li><span>tlf: </span><a href="tel:+56993370039" class="contact">+56950953048</a></li>
-                <br>
-                <li><span>e-mail: </span><a href="mailto:julio.rodriguezr1@gmail.com" target="_top" class="contact">julio.rodriguezr1@gmail.com</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="modal-about" class="modais" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Contacto" data-izimodal-headerColor="#335DA4" style="width: 300px;">
-        <div class="contactame">
-            <ul>
-                <li><span>tlf: </span><a href="tel:+56993370039" class="contact">+56950953048</a></li>
-                <br>
-                <li><span>e-mail: </span><a href="mailto:julio.rodriguezr1@gmail.com" target="_top" class="contact">julio.rodriguezr1@gmail.com</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- END:Playing with easy modal .. delete -->
-
     <!--jquery.min.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./libraries/jquery.js"></script>
+    <!--jqueryUI.min.js-->
+    <script src="./libraries/jqueryui.js"></script>
     <!--angular-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js" integrity="sha256-47AQCzX6dqzjicKe4PabaBJtLnWffl34LU9WJUulNog=" crossorigin="anonymous"></script>
+    <script src="./libraries/angular.js"></script>
     <!--Angular-route-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="./libraries/angular-route.js"></script>
     <!--Moment.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+    <script src="./libraries/moment.js"></script>
     <!--BXSlider-->
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./libraries/jquery-bxsilder.js"></script>
     <!--izimodal.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
-<script type="text/javascript" src="bundleyes.js"></script></body>
+    <script src="./libraries/izimodal.js"></script>
+<script type="text/javascript" src="bundleall.js"></script></body>
 
 </html>

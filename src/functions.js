@@ -24,46 +24,30 @@ app.controller('sobremiController', function($scope) {
     $("#accordion").accordion();
 });
 
+date = new Date();
 
-$(document).ready(function() {
+var d = moment(date).format("dddd,MMMM Do YYYY")
+var startdate = moment().subtract(1, "days").format("dddd,MMMM Do YYYY");
 
-    date = new Date();
+$(".postDate").html(d);
+$(".postDate2").html(startdate);
 
-    var d = moment(date).format("dddd,MMMM Do YYYY")
-    var startdate = moment().subtract(1, "days").format("dddd,MMMM Do YYYY");
-
-    $(".postDate").html(d) // declarative with AngularJS -- Apply controller.
-    $(".postDate2").html(startdate) // declarative with AngularJS -- Apply controller.
-
-    $('.bxslider').bxSlider({
-        auto: true,
-        autoControls: true,
-        stopAutoOnClick: true,
-        pager: true,
-        // responsive: true,
-    });
-
-
-    // $("#change-theme div").click(function() {
-
-    //     if (this.id == "to-green") {
-    //         $("#themes").attr("href", "css/green.css");
-    //     } else if (this.id == "to-blue") {
-    //         $("#themes").attr("href", "css/blue.css");
-    //     } else if (this.id == "to-red") {
-    //         $("#themes").attr("href", "css/red.css");
-    //     }
-
-    // });
-
-    $(".goUp").click(function(e) {
-        e.preventDefault();
-
-        $("html,body").animate({
-            scrollTop: 0
-        }, 500);
-    });
-
-    $(".modais").iziModal({ history: false, fullscreen: true, loop: true, zindex: 99999, focusInput: true });
+$('.bxslider').bxSlider({
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
 
 });
+
+
+
+$(".goUp").click(function(e) {
+    e.preventDefault();
+
+    $("html,body").animate({
+        scrollTop: 0
+    }, 500);
+});
+
+$(".modais").iziModal({ history: false, fullscreen: true, loop: true, zindex: 99999, focusInput: true });

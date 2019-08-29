@@ -1,23 +1,24 @@
  const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
  module.exports = {
      entry: './src/app.js',
      output: {
          path: __dirname + '/build',
-         filename: 'bundleyes.js'
+         filename: 'bundleall.js'
      },
      devServer: {
          port: 1950
      },
      module: {
+
          rules: [{
                  test: /\.css$/,
                  use: [
                      { loader: 'style-loader' },
                      { loader: 'css-loader' }
                  ]
-             },
+             }, { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+
              {
                  test: /\.(gif|png|jpe?g|svg)/i,
                  use: [
@@ -51,5 +52,4 @@
              template: './index.html'
          })
      ]
-
  };
