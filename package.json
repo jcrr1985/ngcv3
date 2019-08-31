@@ -37,10 +37,12 @@
     "dependencies": {
         "@angular/flex-layout": "^8.0.0-beta.26",
         "css-loader": "^3.2.0",
+        "html-minifier": "^4.0.0",
         "jquery": "^3.4.1",
         "moment": "^2.24.0",
         "node-sass": "^4.12.0",
         "sass-loader": "^7.3.1",
+        "uglify-js": "^3.6.0",
         "url-loader": "^2.1.0"
     }
 }

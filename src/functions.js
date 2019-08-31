@@ -10,20 +10,32 @@ app.config(function($routeProvider) {
             templateUrl: "sobremi.html",
             controller: "sobremiController"
         });
-
 });
 
 app.controller('contentController', function($scope) {
-    $scope.message = 'AngularJS: Exito cargando el html principal';
+    $scope.lessmore = function() {
+
+
+        if ($("#more").html("Read more")) {
+            $("#dots").css("display", "none")
+            $("#moretext").css("display", "block")
+
+        }
+
+
+
+
+
+    };
+
 
 });
 
 app.controller('sobremiController', function($scope) {
-    $scope.message = 'AngularJS: Exito cargando el About';
+
 
     $("#accordion").accordion();
 });
-
 
 $('.bxslider').bxSlider({
     auto: true,
@@ -32,8 +44,6 @@ $('.bxslider').bxSlider({
     pager: true,
 
 });
-
-
 
 $(".goUp").click(function(e) {
     e.preventDefault();
@@ -44,3 +54,16 @@ $(".goUp").click(function(e) {
 });
 
 $(".modais").iziModal({ history: false, fullscreen: true, loop: true, zindex: 99999, focusInput: true });
+
+var browsersArray = ["Chrome", "Firefox", "Safari", "Opera", "MSIE"];
+var browser;
+
+var ua = navigator.userAgent;
+
+for (var index = 0; index < browsersArray.length; index++) {
+    if (ua.indexOf(browsersArray[index]) > -1) {
+        browser = browsersArray[index];
+        break;
+    }
+
+}
