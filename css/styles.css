@@ -99,6 +99,7 @@ article.post {
   font-weight: bold;
   font-family: helvetica;
   color: gray;
+  width: 70%;
 }
 
 .postDate2 {
@@ -273,11 +274,6 @@ legend {
 #slider {
   display: flex;
   justify-content: center;
-}
-
-.bx-wrapper,
-.bx-viewport {
-  height: 250px !important;
 }
 
 #megaheader {
@@ -466,11 +462,6 @@ p {
 
 .ui-widget-content a {
   color: darkblue !important;
-}
-
-.bx-wrapper,
-.bx-viewport {
-  height: 220px !important;
 }
 
 #more {

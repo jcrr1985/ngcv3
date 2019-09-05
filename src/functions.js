@@ -33,16 +33,25 @@ app.controller('contentController', function($scope) {
 
 });
 
+
 app.controller('sobremiController', function($scope) {
 
     $("#accordion").accordion();
 });
+
+//window height - device height
+
+var deviceHeight = document.body.clientHeight;
+
+
+
 
 $('.bxslider').bxSlider({
     auto: true,
     autoControls: true,
     stopAutoOnClick: true,
     pager: true,
+    adaptiveHeight: true
 
 });
 
