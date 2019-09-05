@@ -13,26 +13,27 @@ app.config(function($routeProvider) {
 });
 
 app.controller('contentController', function($scope) {
+    $("#moretext").css("display", "none");
+    var moreToggler = true;
     $scope.lessmore = function() {
 
+        if (moreToggler) {
+            $("#dots").css("display", "none");
+            $("#moretext").css("display", "block");
+            $("#readMore").text("Read less");
+            moreToggler = false;
 
-        if ($("#more").html("Read more")) {
-            $("#dots").css("display", "none")
-            $("#moretext").css("display", "block")
-
+        } else {
+            $("#dots").css("display", "inline-block");
+            $("#moretext").css("display", "none");
+            $("#readMore").text("Read more");
+            moreToggler = true;
         }
-
-
-
-
-
     };
-
 
 });
 
 app.controller('sobremiController', function($scope) {
-
 
     $("#accordion").accordion();
 });
@@ -63,6 +64,9 @@ var ua = navigator.userAgent;
 for (var index = 0; index < browsersArray.length; index++) {
     if (ua.indexOf(browsersArray[index]) > -1) {
         browser = browsersArray[index];
+        console.log("TCL: browser", browser, "................. ",
+            "Continue working of next generation imgs for each browser")
+
         break;
     }
 
