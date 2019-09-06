@@ -96,7 +96,7 @@ article.post {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 70%;
+    text-align: justify;
 }
 
 .postDate {
@@ -145,6 +145,7 @@ article.post {
 
 .postN {
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 #contentSecondP {
@@ -347,10 +348,10 @@ legend {
 
 footer {
     display: flex;
-    height: 50px;
-    background: rgba(51, 51, 51, 0.7);
+    height: 10rem;
+    background: rgba(0, 0, 0, 0.7);
     margin: 0 auto;
-    width: 65%;
+    width: 70%;
     margin-top: 50px;
     line-height: 40px;
     justify-content: space-around;
@@ -455,7 +456,7 @@ footer {
 
 span.grey12px,
 p {
-    font-size: 12px;
+    font-size: 14px;
     color: #333;
 }
 
@@ -524,4 +525,18 @@ body {
     max-width: 100%;
     display: block;
     width: -webkit-fill-available;
+}
+
+.iconos-contacto {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    a i {
+        background-color: #F7F7F7;
+        padding: 15px;
+        border-radius: 50%;
+        &:hover {
+            background-color: #000;
+        }
+    }
 }
