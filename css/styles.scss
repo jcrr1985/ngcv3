@@ -514,3 +514,14 @@ body {
         margin-bottom: 10px;
     }
 }
+
+.bx-wrapper,
+.bx-viewport {
+    height: 230px !important; //provide height of slider
+}
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+    width: -webkit-fill-available;
+}

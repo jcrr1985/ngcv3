@@ -515,5 +515,15 @@ body {
     margin-bottom: 10px;
   }
 }
+.bx-wrapper,
+.bx-viewport {
+  height: 230px !important;
+}
+
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+  width: -webkit-fill-available;
+}
 
 /*# sourceMappingURL=styles.css.map */
