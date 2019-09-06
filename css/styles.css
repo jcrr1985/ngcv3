@@ -279,11 +279,6 @@ legend {
   padding-left: 10px;
 }
 
-#slider {
-  display: flex;
-  justify-content: center;
-}
-
 #megaheader {
   display: flex;
   justify-content: space-between;
