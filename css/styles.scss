@@ -62,7 +62,9 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 #menu {
@@ -94,13 +96,13 @@ article.post {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    width: 70%;
 }
 
 .postDate {
     font-weight: bold;
     font-family: helvetica;
     color: gray;
-    width: 70%;
 }
 
 .postDate2 {
@@ -206,12 +208,17 @@ picture img {
     font-size: 15px;
     font-family: helvetica, arial;
     font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: orange;
 }
 
 .figcaption2 {
     font-size: 12px;
     font-family: helvetica, arial;
     margin-top: .5rem;
+    text-align: center;
+    color: orange;
 }
 
 #login {}
@@ -288,6 +295,10 @@ legend {
     width: auto;
     margin-left: 10px;
     margin-right: 10px;
+    img {
+        border: 10px solid rgba(50, 100, 30, .1);
+        border-radius: 50%;
+    }
 }
 
 #change-theme {
@@ -397,6 +408,7 @@ footer {
         animation: circle 3s infinite alternate;
         padding: 10px;
         box-shadow: 3px 3px 10px black;
+        height: fit-content;
     }
     @keyframes circle {
         from {
@@ -411,9 +423,9 @@ footer {
         transition: all 300ms;
         margin-left: 3px;
         margin-right: 3px;
-    }
-    #menu ul li a {
-        padding: 8px;
+        a {
+            padding: 8px;
+        }
     }
 }
 
@@ -480,4 +492,14 @@ p {
 
 body {
     background: url('https://picsum.photos/id/238/1500/1500');
+}
+
+#nav-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu ul li {
+    display: flex;
+    align-items: flex-end
 }
