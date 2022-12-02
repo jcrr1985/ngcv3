@@ -288,6 +288,8 @@ legend {
   width: auto;
   margin-left: 10px;
   margin-right: 10px;
+  display: grid;
+    place-items: center;
 }
 #rightHead img {
   border: 10px solid rgba(50, 100, 30, 0.1);
