@@ -491,6 +491,9 @@ p {
 
 body {
   background: url('./../img/webp/binary-vortex.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
 }
 
 #nav-menu {
